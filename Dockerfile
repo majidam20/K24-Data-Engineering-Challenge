@@ -8,10 +8,10 @@ WORKDIR /opt/app
 RUN pip install -r requirements.txt
 
 
-COPY sales_data_cleaned.py ./
+COPY transfer_sales_data.py ./
 
 
-CMD [ "python", "sales_data_cleaned.py" ]
+CMD [ "python", "transfer_sales_data.py" ]
 
 
 
